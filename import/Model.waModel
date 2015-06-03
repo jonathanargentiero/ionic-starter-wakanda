@@ -1,0 +1,127 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Contact": {
+				"panelColor": "#996699",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 115,
+						"Y": 22
+					}
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Contacts",
+			"className": "Contact",
+			"collectionName": "ContactCollection",
+			"matchTable": "Contacts, Beer,Employee",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "first_name",
+					"kind": "storage",
+					"matchColumn": "name,fullName",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "last_name",
+					"kind": "storage",
+					"matchColumn": "tags,salary",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "company_name",
+					"kind": "storage",
+					"matchColumn": "brewery,age",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "address",
+					"kind": "storage",
+					"matchColumn": "alcohol,title",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "city",
+					"kind": "storage",
+					"matchColumn": "image,gender",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "country",
+					"kind": "storage",
+					"matchColumn": "url",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "state",
+					"kind": "storage",
+					"matchColumn": "breweryUrl",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "zip",
+					"kind": "storage",
+					"matchColumn": "tagsUrl,typeUrl",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "phone1",
+					"kind": "storage",
+					"matchColumn": "phone,position",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "phone2",
+					"kind": "storage",
+					"matchColumn": "score",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "email",
+					"kind": "storage",
+					"matchColumn": "rating",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "website",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				}
+			]
+		}
+	]
+}

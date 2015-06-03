@@ -1,0 +1,13 @@
+body{
+    box-sizing: border-box;
+}
+.component .description{
+	height: 50px;
+	box-sizing: border-box;
+	padding: 15px 0;
+	float: left;
+}
+.component .logo{
+	height: 50px;
+	float: right;
+}

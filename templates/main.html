@@ -1,0 +1,77 @@
+<ion-view view-title="Wakanda">
+    <div class="bar  bar-subheader bar-stable">
+      <h2 class="title">Splendid!</h2>
+    </div>
+    <ion-content id="content" class="has-header has-subheader has-footer" delegate-handle="myScroll">
+    <div class="row">
+        <div class="col text-center">
+            <h3>Javascript everywhere!</h3>
+        </div>
+    </div>
+    <div class="row row-center">
+      <div class="col text-center"><img src="images/ionic.png" alt="I'm Ionic"></div>
+    </div>
+
+
+      <div class="list">
+        
+        <div class="item item-divider"> 
+          <i class="icon ion-gear-b positive"></i> Components
+       </div>
+
+        <div class="item component" ng-repeat="item in components">
+            <div class="description">
+          <i ng-class="item.checked ? 'icon ion-checkmark balanced' : 'icon ion-close assertive'"></i> {{ item.text }}
+          </div>
+          <img class="logo" ng-src="{{ item.image }}" alt="I'm {{ item.text }}">
+        </div>
+        <div class="item item-divider"> 
+          <i class="icon ion-wrench positive"></i> Plugins
+        </div>
+
+        <div class="item" ng-repeat="item in plugins">
+          <i ng-class="item.checked ? 'icon ion-checkmark balanced' : 'icon ion-close assertive'"></i> {{ item.text }}
+        </div>
+        <div class="item item-divider"> 
+          <i class="icon ion-document-text positive"></i> Documentation
+        </div>
+
+        <a class="item" target="_blank" ng-href="{{ item.url }}" ng-repeat="item in documentation">
+          <i class="icon ion-document calm"></i> {{ item.text }}
+        </a>
+
+        <ion-toggle ng-repeat="item in settingsList"
+                    ng-model="item.checked" 
+                    ng-checked="item.checked">
+          <i class="icon ion-wrench energized"></i> {{ item.text }}
+        </ion-toggle>   
+
+        <div class="item item-divider">
+        <i class="icon ion-shuffle positive"></i> Services
+        </div>
+        
+        <ion-toggle ng-disabled="true" ng-model="serverStatus.status">
+          Wakanda Server
+        </ion-toggle>
+        <div class="item">
+          <pre ng-bind="serverStatus.text | json"></pre> 
+        </div>
+
+        <ion-toggle ng-disabled="true" ng-model="dataModel.status">
+          Wakanda Data Model
+        </ion-toggle>
+        <div class="item">
+          <pre ng-bind="dataModel.model | json"></pre> 
+        </div>
+
+        
+        
+      </div>
+    </ion-content>
+
+    <div class="bar bar-footer bar-energized">
+      <div class="title">License (MIT) - © 2015 Wakanda SAS</div>
+    </div>
+
+</ion-view>
+
