@@ -1,6 +1,6 @@
 {
   "name": "Ionic Starter Wakanda",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "Jonathan Argentiero <jonathan.argentiero@gmail.com>"
   ],
@@ -13,7 +13,7 @@
     "tests"
   ],
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.14",
+    "ionic": "driftyco/ionic-bower#1.0.0",
     "angular-wakanda": "~0.4.3"
   }
 }
