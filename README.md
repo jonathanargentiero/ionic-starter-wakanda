@@ -6,7 +6,7 @@ This is an addon starter template for the [Ionic Framework](http://ionicframewor
 
 To use this, either create a new ionic project using the ionic node.js utility, or copy and paste this into an existing Cordova project and download a release of Ionic separately.
 
-##Prerequisite
+## Prerequisite
 
 Of course you need node, but you will also need the following modules :
 
@@ -15,8 +15,8 @@ Of course you need node, but you will also need the following modules :
 * bower `npm install -g bower`
 - [Wakanda Server V11 based on JSCore](http://www.wakanda.org/downloads) (optional)
 
-##Initialize
-###with the Ionic tool:
+## Initialize
+### with the Ionic tool:
 
 The project will be initialized in the `myApp` folder. If you are inside a Wakanda Solution run this command inside the `WebFolder`of your project. Dependencies will be installed with bower.
 
@@ -28,8 +28,8 @@ $ bower install
 
 You can also initialize some dummy data provided in the `import` folder. In order to do that just copy all the files inside the `import` folder in the main directory of your project, overwriting the existing data model files.
 
-##Run
-###with wakanda:
+## Run
+### with wakanda:
 
 You can start the solution inside Wakanda Studio or directly [via command line](http://livedoc.wakanda.org/Command-Line-Access/Administrating-Wakanda-Server-Unix.300-583228.en.html) (example on MAC): 
 
@@ -39,7 +39,7 @@ You can start the solution inside Wakanda Studio or directly [via command line](
 
 Then navigate to `http://127.0.0.1:8081/myApp/www`
 
-###with cordova:
+### with cordova:
 
 Then, to run it, cd into `myApp` and run:
 
