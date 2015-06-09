@@ -22,7 +22,7 @@ The project will be initialized in the `myApp` folder. If you are inside a Wakan
 
 ```
 $ ionic start myApp https://github.com/jonathanargentiero/ionic-starter-wakanda
-$ cd myApp
+$ cd myApp/www
 $ bower install
 ```
 
