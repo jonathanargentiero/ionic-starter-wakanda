@@ -16,13 +16,16 @@ angular.module('starter.home', ['wakanda', 'ionic' ])
 
         $scope.components = [
             { text: "Wakanda", checked: true, image : "images/wakanda.png" },
-            { text: "Angular", checked: true, image : "images/angular-wakanda.png"  },
-            { text: "Ionic", checked: true, image : "images/ionic.png"  },
+            { text: "Angular", checked: true, image : "images/angular-wakanda.png", version : angular.version.full  },
+            { text: "Ionic", checked: true, image : "images/ionic.png", version : ionic.version  },
             { text: "Cordova", checked: true, image : "images/cordova.png" }
         ];
 
         $scope.plugins = [
-            { text: "Angular-Wakanda", checked: true },
+            { text: "Angular-Wakanda connector", checked: true, version : "0.4.3" },
+            { text: "Angular-animate", checked: true },
+            { text: "Angular-sanitize", checked: true },
+            { text: "Angular-ui-router", checked: true },
             { text: "Ionic JS", checked: true },
             { text: "Ionic CSS", checked: true }
         ];

@@ -21,7 +21,7 @@
 
         <div class="item component" ng-repeat="item in components">
             <div class="description">
-          <i ng-class="item.checked ? 'icon ion-checkmark balanced' : 'icon ion-close assertive'"></i> {{ item.text }}
+          <i ng-class="item.checked ? 'icon ion-checkmark balanced' : 'icon ion-close assertive'"></i> {{ item.text }} <span class="gray">{{ item.version }}</span>
           </div>
           <img class="logo" ng-src="{{ item.image }}" alt="I'm {{ item.text }}">
         </div>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="item" ng-repeat="item in plugins">
-          <i ng-class="item.checked ? 'icon ion-checkmark balanced' : 'icon ion-close assertive'"></i> {{ item.text }}
+          <i ng-class="item.checked ? 'icon ion-checkmark balanced' : 'icon ion-close assertive'"></i> {{ item.text }} <span class="gray">{{ item.version }}</span>
         </div>
         <div class="item item-divider"> 
           <i class="icon ion-document-text positive"></i> Documentation
