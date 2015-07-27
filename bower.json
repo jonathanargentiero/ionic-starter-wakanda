@@ -12,7 +12,7 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
+  "dependencies": {
     "ionic": "driftyco/ionic-bower#1.0.0",
     "angular-wakanda": "~0.4.3"
   }
